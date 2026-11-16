@@ -56,6 +56,24 @@
     <p class="muted" id="howMeta"></p>
   </dialog>
 
+  <dialog id="chartDlg" class="chart-dlg" aria-labelledby="chartDlgTitle">
+    <form method="dialog"><button class="close" aria-label="Close">×</button></form>
+    <h2 id="chartDlgTitle"></h2>
+    <p class="muted" id="chartDlgSub"></p>
+    <div class="chips" id="chartDlgChips" role="radiogroup" aria-label="Pollutant"></div>
+    <div class="dlg-charts">
+      <section>
+        <div class="section-title">Hourly readings</div>
+        <div class="chart-wrap" id="tsBig"></div>
+      </section>
+      <section>
+        <div class="section-title" id="chartDlgRoseTitle"></div>
+        <div class="chart-wrap" id="roseBig"></div>
+        <p class="chart-caption">Average level by the direction the wind blew <em>from</em>.</p>
+      </section>
+    </div>
+  </dialog>
+
   <div class="tooltip" id="tip" role="tooltip" hidden></div>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>

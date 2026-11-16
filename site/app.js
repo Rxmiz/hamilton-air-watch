@@ -346,12 +346,12 @@ function stationView(id) {
         <span>${pct == null ? '–' : pct + '%'}</span></div>`;
     }).join('')}</div>
     <p class="chart-caption">% of Ontario's limit: under 50% Normal, 50–80% Elevated, 80–100% High. PM and benzene limits apply to 24-hour averages, so those are judged on the average.</p>
-    ${focus ? `<div class="section-title">${P[focus].label} — last ${attr.window.days} days</div>
+    ${focus ? `<div class="section-title title-row"><span id="tsTitle">${P[focus].label} — last ${attr.window.days} days</span>${expandBtn}</div>
       <div class="chips" style="margin-bottom:6px">${keys.map(k => `<button class="chip" data-focus="${k}" aria-checked="${k === focus}">${P[k].short}</button>`).join('')}</div>
       <div class="chart-wrap" id="ts"></div>
-      <div class="section-title">Where ${P[focus].short} comes from</div>
+      <div class="section-title title-row"><span id="roseTitle">Where ${P[focus].short} comes from</span>${expandBtn}</div>
       <div class="chart-wrap" id="rose"></div>
-      <p class="chart-caption">Average ${P[focus].short} by the direction the wind blew <em>from</em>. A long petal pointing at a plant is strong evidence.</p>` : ''}` : '<p class="callout">This station only measures wind. It\'s used to work out where pollution at nearby monitors came from.</p>'}
+      <p class="chart-caption">Average <span id="roseKey">${P[focus].short}</span> by the direction the wind blew <em>from</em>. A long petal pointing at a plant is strong evidence.</p>` : ''}` : '<p class="callout">This station only measures wind. It\'s used to work out where pollution at nearby monitors came from.</p>'}
     ${implicated.length ? `<div class="section-title">Facilities most implicated here</div>
     <ol class="rank">${implicated.map((x, i) => { const f = facilities.get(x.c.id); return `<li><button data-fac="${f.id}"><span class="pos">${i + 1}</span><span class="name">${esc(f.name)}</span><span class="val">${Math.round(100 * x.v / totImp)}%</span><span class="bar"><i style="width:${100 * x.v / implicated[0].v}%"></i></span></button></li>`; }).join('')}</ol>` : ''}`;
 }
@@ -394,9 +394,10 @@ function eventView(i) {
 
 function bindPanel(body) {
   body.onclick = e => {
-    const t = e.target.closest('[data-fac],[data-ev],[data-back],[data-focus],[data-setp],[data-how]');
+    const t = e.target.closest('[data-fac],[data-ev],[data-back],[data-focus],[data-setp],[data-how],[data-expand]');
     if (!t) return;
     if (t.dataset.how !== undefined) { e.preventDefault(); $('#how').showModal(); return; }
+    if (t.dataset.expand !== undefined) { openChartDialog(state.detail.id, shownFocus); return; }
     if (t.dataset.fac) openDetail({ type: 'facility', id: t.dataset.fac });
     else if (t.dataset.ev) openDetail({ type: 'event', id: +t.dataset.ev });
     else if (t.dataset.back !== undefined) { openDetail(state.history.pop(), false); }
@@ -415,23 +416,71 @@ const tip = $('#tip');
 function showTip(html, x, y) { tip.innerHTML = html; tip.hidden = false; const r = tip.getBoundingClientRect(); tip.style.left = Math.min(x + 12, innerWidth - r.width - 8) + 'px'; tip.style.top = (y - r.height - 12) + 'px'; }
 function hideTip() { tip.hidden = true; }
 
+let shownFocus = null; // pollutant currently charted in the station panel
 function drawStationCharts(id, key) {
+  shownFocus = key;
+  if ($('#tsTitle')) {
+    $('#tsTitle').textContent = `${P[key].label} — last ${attr.window.days} days`;
+    $('#roseTitle').textContent = `Where ${P[key].short} comes from`;
+    $('#roseKey').textContent = P[key].short;
+  }
   drawTimeSeries($('#ts'), inWindow(readings.series[id][key]), P[key]);
   drawRose($('#rose'), attr.roses[id]?.[key], P[key]);
 }
 
-function drawTimeSeries(el, data, p) {
+const expandBtn = `<button class="expand-btn" type="button" data-expand aria-label="Open a larger view of these charts">
+  <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M9.5 2.5h4v4M13.5 2.5 9 7M6.5 13.5h-4v-4M2.5 13.5 7 9" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Expand</button>`;
+
+// ---------- larger chart view ----------
+const chartDlg = $('#chartDlg');
+let dlgState = null;
+function openChartDialog(id, key) {
+  dlgState = { id, key };
+  chartDlg.append(tip); // the tooltip must live inside the modal to appear above it
+  chartDlg.showModal();
+  drawChartDialog();
+}
+function drawChartDialog() {
+  const { id, key } = dlgState, p = P[key];
+  const keys = Object.keys(P).filter(k => readings.series[id]?.[k]);
+  $('#chartDlgTitle').textContent = stations.get(id).name;
+  $('#chartDlgSub').textContent = `${p.label} · last ${attr.window.days} days · ${p.units}`;
+  $('#chartDlgChips').innerHTML = keys.map(k => `<button class="chip" data-dlgkey="${k}" aria-checked="${k === key}">${P[k].short}</button>`).join('');
+  $('#chartDlgRoseTitle').textContent = `Where ${p.short} comes from`;
+  const big = innerWidth > 900;
+  drawTimeSeries($('#tsBig'), inWindow(readings.series[id][key]), p, { height: big ? Math.max(260, Math.min(440, innerHeight - 330)) : 240 });
+  drawRose($('#roseBig'), attr.roses[id]?.[key], p, big ? 300 : 260);
+}
+$('#chartDlgChips').onclick = e => {
+  const b = e.target.closest('[data-dlgkey]');
+  if (b) { dlgState.key = b.dataset.dlgkey; drawChartDialog(); }
+};
+chartDlg.addEventListener('close', () => {
+  hideTip(); document.body.append(tip);
+  // keep the panel in step with whatever pollutant was last viewed large
+  if (dlgState && dlgState.key !== shownFocus && state.detail?.id === dlgState.id) {
+    drawStationCharts(dlgState.id, dlgState.key);
+    $('#panelBody').querySelectorAll('[data-focus]').forEach(b => b.setAttribute('aria-checked', b.dataset.focus === dlgState.key));
+  }
+});
+let resizeTimer;
+addEventListener('resize', () => { clearTimeout(resizeTimer); resizeTimer = setTimeout(() => chartDlg.open && drawChartDialog(), 150); });
+
+function drawTimeSeries(el, data, p, opts = {}) {
   if (!el) return;
-  const W = el.clientWidth || 380, H = 170, m = { l: 34, r: 8, t: 10, b: 22 };
+  const W = el.clientWidth || 380, H = opts.height || 170, m = { l: 34, r: 8, t: 10, b: 22 };
   const ts = data.map(d => Date.parse(d[0])), vs = data.map(d => d[1]);
   const limit = p.aaqc1h ?? p.aaqc24h;
   const yMax = Math.max(...vs, p.trigger) * 1.1 || 1;
   const showLimit = limit <= yMax * 1.6;
   const top = showLimit ? Math.max(yMax, limit * 1.08) : yMax;
+  // some monitors report small negative values (zero drift); give them room below the axis instead of clipping
+  const ticks = niceTicks(top, 4), step = ticks[1] || 1, minV = Math.min(0, ...vs);
+  for (let v = -step; v >= minV - 1e-9; v -= step) ticks.unshift(+v.toFixed(6));
+  const bot = minV < 0 ? Math.min(ticks[0], minV * 1.1) : 0;
   const x0 = ts[0], x1 = ts.at(-1);
   const X = t => m.l + (t - x0) / (x1 - x0 || 1) * (W - m.l - m.r);
-  const Y = v => H - m.b - v / top * (H - m.t - m.b);
-  const ticks = niceTicks(top, 4);
+  const Y = v => H - m.b - (v - bot) / (top - bot) * (H - m.t - m.b);
   let path = '', area = '', prev = null;
   data.forEach(([t, v], i) => {
     const tt = ts[i], gap = prev != null && tt - prev > 2 * 3600e3;
@@ -439,7 +488,9 @@ function drawTimeSeries(el, data, p) {
   });
   area = `M${X(ts[0])},${Y(0)}` + data.map((d, i) => `L${X(ts[i]).toFixed(1)},${Y(d[1]).toFixed(1)}`).join('') + `L${X(ts.at(-1))},${Y(0)}Z`;
   const days = [];
-  const spanDays = (x1 - x0) / 864e5, stepDays = spanDays <= 8 ? 1 : spanDays <= 31 ? 7 : 14;
+  // label step: the smallest that leaves room for each label at this width
+  const pxPerDay = (W - m.l - m.r) / Math.max(1, (x1 - x0) / 864e5);
+  const stepDays = pxPerDay >= 38 ? 1 : [2, 7, 14, 28].find(s => s * pxPerDay >= 50) ?? 28;
   for (let t = new Date(x0 + stepDays * 864e5); t <= x1; t = new Date(t.getTime() + stepDays * 864e5)) days.push(t);
   const dayFmt = new Intl.DateTimeFormat('en-CA', stepDays === 1 ? { timeZone: 'America/Toronto', weekday: 'short' } : { timeZone: 'America/Toronto', month: 'short', day: 'numeric' });
   el.innerHTML = `<svg class="chart" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-label="${esc(p.label)} hourly readings">
@@ -467,10 +518,10 @@ function niceTicks(max, n) {
   const out = []; for (let v = 0; v <= max + 1e-9; v += step) out.push(+v.toFixed(6)); return out;
 }
 
-function drawRose(el, rose, p) {
+function drawRose(el, rose, p, S = 220) {
   if (!el) return;
   if (!rose || rose.every(v => v == null)) { el.innerHTML = '<p class="chart-caption">Not enough wind data.</p>'; return; }
-  const S = 220, c = S / 2, R = c - 22, max = Math.max(...rose.filter(v => v != null)) || 1;
+  const c = S / 2, R = c - 22, max = Math.max(...rose.filter(v => v != null)) || 1;
   const steps = ['--seq-1', '--seq-2', '--seq-3', '--seq-4', '--seq-5'];
   const petal = (i, v) => {
     const r = 6 + (R - 6) * Math.sqrt(v / max), a0 = (i * 22.5 - 10) * Math.PI / 180, a1 = (i * 22.5 + 10) * Math.PI / 180;

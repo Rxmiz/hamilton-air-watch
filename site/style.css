@@ -150,6 +150,26 @@ h1, h2, h3 { margin: 0; letter-spacing: -0.01em; }
 .chart .ring { fill: none; stroke: var(--grid); }
 .chart-wrap { position: relative; margin: 6px 0 4px; }
 .chart-caption { font-size: 12px; color: var(--text-secondary); margin: 2px 0 0; }
+.title-row { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.expand-btn {
+  display: inline-flex; align-items: center; gap: 5px; font: inherit; font-size: 12px; font-weight: 500;
+  text-transform: none; letter-spacing: 0; color: var(--accent); background: none; cursor: pointer;
+  border: 1px solid var(--border); border-radius: 6px; padding: 3px 8px;
+}
+.expand-btn:hover { background: var(--surface-2, rgb(127 127 127 / .08)); }
+
+/* larger chart view */
+dialog.chart-dlg { max-width: 1120px; width: calc(100% - 32px); }
+.chart-dlg #chartDlgSub { margin: 0 0 12px; }
+.chart-dlg .chips { margin-bottom: 4px; }
+.dlg-charts { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 28px; align-items: start; }
+.chart-dlg .chart text { font-size: 12px; }
+@media (max-width: 900px) {
+  .dlg-charts { grid-template-columns: minmax(0, 1fr); gap: 4px; }
+}
+@media (max-width: 600px) {
+  dialog.chart-dlg { padding: 20px 16px; width: calc(100% - 16px); }
+}
 
 .legend {
   position: absolute; left: 12px; bottom: 22px; z-index: 500; background: var(--surface-1); color: var(--text-primary);
