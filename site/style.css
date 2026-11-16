@@ -92,12 +92,31 @@ h1, h2, h3 { margin: 0; letter-spacing: -0.01em; }
 .panel-body { overflow-y: auto; padding: 16px 18px 28px; flex: 1; }
 
 @media (max-width: 900px) {
-  .layout { grid-template-columns: 1fr; }
-  .map-wrap { min-height: 55vh; }
+  /* Phones: let the page scroll as one long column instead of squeezing everything into one screen. */
+  html, body { height: auto; }
+  body { min-height: 100dvh; }
+  .layout { flex: none; grid-template-columns: 1fr; }
+  .map-wrap { min-height: 0; height: 55vh; height: 55svh; } /* svh: doesn't jump when the browser bar hides */
   .panel { border-left: 0; border-top: 1px solid var(--border); max-height: none; }
+  .panel-body { overflow: visible; flex: none; padding-bottom: calc(24px + env(safe-area-inset-bottom)); }
   .topbar, .filters { padding-left: 16px; padding-right: 16px; }
-  .panel-body { padding: 14px 16px 24px; }
+  .panel-body { padding-top: 14px; padding-left: 16px; padding-right: 16px; }
   .link-btn { margin-left: 0; }
+}
+
+/* Small phones: one swipeable row per control group, so the map starts higher up the screen. */
+@media (max-width: 600px) {
+  .topbar { padding-top: 10px; padding-bottom: 10px; gap: 8px; }
+  .aqhi { width: 100%; gap: 8px; }
+  .aqhi-stations, .filters .chips {
+    flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch;
+    margin-right: -16px; padding-right: 16px; /* let rows scroll to the screen edge */
+  }
+  .aqhi-stations::-webkit-scrollbar, .filters .chips::-webkit-scrollbar { display: none; }
+  .aqhi-stations { width: 100%; }
+  .aqhi-pill, .chip { flex: none; }
+  .filters { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 8px 10px; padding-top: 8px; padding-bottom: 8px; }
+  .filters .link-btn { grid-column: 1 / -1; justify-self: start; padding: 0; }
 }
 
 /* ---------- panel content ---------- */
