@@ -1,0 +1,1469 @@
+{
+ "generated": "2026-11-15T21:36:20.768Z",
+ "source": "NPRI (ECCC)",
+ "facilities": [
+  {
+   "id": "3713",
+   "lastYear": 2024,
+   "company": "ArcelorMittal Canada MP Inc. and ArcelorMittal Canada Inc. partners in ArcelorMittal Dofasco G.P.",
+   "name": "ArcelorMittal Dofasco",
+   "address": "1330 Burlington Street East, Hamilton",
+   "lat": 43.2597,
+   "lon": -79.8111,
+   "naics": "Iron and steel mills and ferro-alloy manufacturing",
+   "sector": "Iron and Steel",
+   "year": 2024,
+   "air": {
+    "NO2": 2999,
+    "CO": 1481,
+    "Benzene": 15.83,
+    "SO2": 4231,
+    "TRS": 81.96,
+    "PM10": 684.6,
+    "PM25": 467.3
+   },
+   "topAir": [
+    {
+     "substance": "Sulphur dioxide",
+     "tonnes": 4230
+    },
+    {
+     "substance": "Nitrogen oxides (expressed as nitrogen dioxide)",
+     "tonnes": 3000
+    },
+    {
+     "substance": "Carbon monoxide",
+     "tonnes": 1480
+    },
+    {
+     "substance": "Total particulate matter",
+     "tonnes": 1090
+    },
+    {
+     "substance": "PM10 - Particulate Matter <= 10 Micrometers",
+     "tonnes": 685
+    },
+    {
+     "substance": "PM2.5 - Particulate Matter <= 2.5 Micrometers",
+     "tonnes": 467
+    },
+    {
+     "substance": "Volatile Organic Compounds (Total)",
+     "tonnes": 54.8
+    },
+    {
+     "substance": "Ammonia (total)",
+     "tonnes": 48.9
+    }
+   ]
+  },
+  {
+   "id": "2984",
+   "lastYear": 2024,
+   "company": "Stelco Inc.",
+   "name": "Stelco",
+   "address": "386 Wilcox Street, Hamilton",
+   "lat": 43.26926,
+   "lon": -79.8246,
+   "naics": "Iron and steel mills and ferro-alloy manufacturing",
+   "sector": "Iron and Steel",
+   "year": 2024,
+   "air": {
+    "NO2": 1017,
+    "CO": 148.8,
+    "Benzene": 14,
+    "SO2": 1762,
+    "TRS": 31.38,
+    "PM10": 224.2,
+    "PM25": 181.6
+   },
+   "topAir": [
+    {
+     "substance": "Sulphur dioxide",
+     "tonnes": 1760
+    },
+    {
+     "substance": "Nitrogen oxides (expressed as nitrogen dioxide)",
+     "tonnes": 1020
+    },
+    {
+     "substance": "Total particulate matter",
+     "tonnes": 528
+    },
+    {
+     "substance": "PM10 - Particulate Matter <= 10 Micrometers",
+     "tonnes": 224
+    },
+    {
+     "substance": "PM2.5 - Particulate Matter <= 2.5 Micrometers",
+     "tonnes": 182
+    },
+    {
+     "substance": "Carbon monoxide",
+     "tonnes": 149
+    },
+    {
+     "substance": "Volatile Organic Compounds (Total)",
+     "tonnes": 129
+    },
+    {
+     "substance": "Total reduced sulphur (expressed as hydrogen sulphide)",
+     "tonnes": 15.7
+    }
+   ]
+  },
+  {
+   "id": "10139",
+   "lastYear": 2024,
+   "company": "Carmeuse Lime Canada Limited",
+   "name": "Dundas Operations",
+   "address": "600 highway # 5 Highway West, Dundas",
+   "lat": 43.29305,
+   "lon": -79.98629,
+   "naics": "Lime manufacturing",
+   "sector": "Cement, Lime and Other Non-Metallic Minerals",
+   "year": 2024,
+   "air": {
+    "NO2": 1574,
+    "CO": 269.9,
+    "SO2": 1985,
+    "PM10": 153.8,
+    "PM25": 75.04
+   },
+   "topAir": [
+    {
+     "substance": "Sulphur dioxide",
+     "tonnes": 1980
+    },
+    {
+     "substance": "Nitrogen oxides (expressed as nitrogen dioxide)",
+     "tonnes": 1570
+    },
+    {
+     "substance": "Carbon monoxide",
+     "tonnes": 270
+    },
+    {
+     "substance": "Total particulate matter",
+     "tonnes": 186
+    },
+    {
+     "substance": "PM10 - Particulate Matter <= 10 Micrometers",
+     "tonnes": 154
+    },
+    {
+     "substance": "PM2.5 - Particulate Matter <= 2.5 Micrometers",
+     "tonnes": 75
+    }
+   ]
+  },
+  {
+   "id": "10948",
+   "lastYear": 2024,
+   "company": "Lafarge Canada Inc. - EAST",
+   "name": "Dundas Quarry",
+   "address": "628 No. 5 Highway, Dundas",
+   "lat": 43.29145,
+   "lon": -79.98936,
+   "naics": "Limestone mining and quarrying",
+   "sector": "Mining and Quarrying",
+   "year": 2024,
+   "air": {
+    "PM10": 121.1,
+    "PM25": 13.14
+   },
+   "topAir": [
+    {
+     "substance": "Total particulate matter",
+     "tonnes": 386
+    },
+    {
+     "substance": "PM10 - Particulate Matter <= 10 Micrometers",
+     "tonnes": 121
+    },
+    {
+     "substance": "PM2.5 - Particulate Matter <= 2.5 Micrometers",
+     "tonnes": 13.1
+    }
+   ]
+  },
+  {
+   "id": "2660",
+   "lastYear": 2024,
+   "company": "Birla Carbon Canada Ltd.",
+   "name": "Birla Carbon Canada Ltd.",
+   "address": "755 Parkdale Avenue North, Hamilton",
+   "lat": 43.2588,
+   "lon": -79.7843,
+   "naics": "All other basic inorganic chemical manufacturing",
+   "sector": "Chemicals",
+   "year": 2024,
+   "air": {
+    "NO2": 513.5,
+    "CO": 1753,
+    "SO2": 3400,
+    "TRS": 23.82,
+    "PM10": 64.41,
+    "PM25": 57.25
+   },
+   "topAir": [
+    {
+     "substance": "Sulphur dioxide",
+     "tonnes": 3400
+    },
+    {
+     "substance": "Carbon monoxide",
+     "tonnes": 1750
+    },
+    {
+     "substance": "Nitrogen oxides (expressed as nitrogen dioxide)",
+     "tonnes": 513
+    },
+    {
+     "substance": "Total particulate matter",
+     "tonnes": 71.6
+    },
+    {
+     "substance": "PM10 - Particulate Matter <= 10 Micrometers",
+     "tonnes": 64.4
+    },
+    {
+     "substance": "PM2.5 - Particulate Matter <= 2.5 Micrometers",
+     "tonnes": 57.3
+    },
+    {
+     "substance": "Total reduced sulphur (expressed as hydrogen sulphide)",
+     "tonnes": 12.2
+    },
+    {
+     "substance": "Hydrogen sulphide",
+     "tonnes": 7.89
+    }
+   ]
+  },
+  {
+   "id": "7005",
+   "lastYear": 2024,
+   "company": "Meridian Brick",
+   "name": "Meridian Brick - Aldershot",
+   "address": "1570 Yorkton Court, Aldershot",
+   "lat": 43.3262,
+   "lon": -79.8542,
+   "naics": "Clay building material and refractory manufacturing",
+   "sector": "Cement, Lime and Other Non-Metallic Minerals",
+   "year": 2024,
+   "air": {
+    "NO2": 39.13,
+    "CO": 70.72,
+    "SO2": 19.17,
+    "PM10": 34.61,
+    "PM25": 3.81
+   },
+   "topAir": [
+    {
+     "substance": "Carbon monoxide",
+     "tonnes": 70.7
+    },
+    {
+     "substance": "Total particulate matter",
+     "tonnes": 40.7
+    },
+    {
+     "substance": "Nitrogen oxides (expressed as nitrogen dioxide)",
+     "tonnes": 39.1
+    },
+    {
+     "substance": "PM10 - Particulate Matter <= 10 Micrometers",
+     "tonnes": 34.6
+    },
+    {
+     "substance": "Sulphur dioxide",
+     "tonnes": 19.2
+    },
+    {
+     "substance": "Hydrochloric acid",
+     "tonnes": 15
+    },
+    {
+     "substance": "PM2.5 - Particulate Matter <= 2.5 Micrometers",
+     "tonnes": 3.81
+    }
+   ]
+  },
+  {
+   "id": "10610",
+   "lastYear": 2024,
+   "company": "Dufferin Aggregates, a Division of CRH Canada Group Inc.",
+   "name": "Flamboro Quarry",
+   "address": "685 Brock Road, Dundas",
+   "lat": 43.315,
+   "lon": -80.0208,
+   "naics": "Limestone mining and quarrying",
+   "sector": "Mining and Quarrying",
+   "year": 2024,
+   "air": {
+    "PM10": 27.33,
+    "PM25": 5.859
+   },
+   "topAir": [
+    {
+     "substance": "Total particulate matter",
+     "tonnes": 83.1
+    },
+    {
+     "substance": "PM10 - Particulate Matter <= 10 Micrometers",
+     "tonnes": 27.3
+    },
+    {
+     "substance": "PM2.5 - Particulate Matter <= 2.5 Micrometers",
+     "tonnes": 5.86
+    }
+   ]
+  },
+  {
+   "id": "161",
+   "lastYear": 2024,
+   "company": "Bunge Canada",
+   "name": "BUNGE CANADA - HAMILTON",
+   "address": "515 Victoria Avenue North, Hamilton",
+   "lat": 43.27022,
+   "lon": -79.84949,
+   "naics": "Oilseed processing",
+   "sector": "Other Manufacturing",
+   "year": 2024,
+   "air": {
+    "NO2": 38.87,
+    "CO": 32.65,
+    "PM10": 26.15,
+    "PM25": 14.36
+   },
+   "topAir": [
+    {
+     "substance": "Volatile Organic Compounds (Total)",
+     "tonnes": 335
+    },
+    {
+     "substance": "n-Hexane",
+     "tonnes": 222
+    },
+    {
+     "substance": "Nitrogen oxides (expressed as nitrogen dioxide)",
+     "tonnes": 38.9
+    },
+    {
+     "substance": "Carbon monoxide",
+     "tonnes": 32.7
+    },
+    {
+     "substance": "Total particulate matter",
+     "tonnes": 29.9
+    },
+    {
+     "substance": "PM10 - Particulate Matter <= 10 Micrometers",
+     "tonnes": 26.1
+    },
+    {
+     "substance": "PM2.5 - Particulate Matter <= 2.5 Micrometers",
+     "tonnes": 14.4
+    }
+   ]
+  },
+  {
+   "id": "30655",
+   "lastYear": 2024,
+   "company": "P & H Milling Group a Division of Parrish & Heimbecker Limited",
+   "name": "P & H Milling Group - Hamilton",
+   "address": "229 Burlington Street East, Hamilton",
+   "lat": 43.271332,
+   "lon": -79.852742,
+   "naics": "Flour milling",
+   "sector": "Other Manufacturing",
+   "year": 2024,
+   "air": {
+    "PM10": 20.56,
+    "PM25": 16.97
+   },
+   "topAir": [
+    {
+     "substance": "Total particulate matter",
+     "tonnes": 32.1
+    },
+    {
+     "substance": "PM10 - Particulate Matter <= 10 Micrometers",
+     "tonnes": 20.6
+    },
+    {
+     "substance": "PM2.5 - Particulate Matter <= 2.5 Micrometers",
+     "tonnes": 17
+    }
+   ]
+  },
+  {
+   "id": "5657",
+   "lastYear": 2024,
+   "company": "GFL Environmental Inc.",
+   "name": "Stoney Creek Regional Facility",
+   "address": "65 Green Mountain Road West, Stoney Creek",
+   "lat": 43.1972,
+   "lon": -79.7727,
+   "naics": "Waste treatment and disposal",
+   "sector": "Waste Treatment and Disposal",
+   "year": 2024,
+   "air": {
+    "PM10": 18.2,
+    "PM25": 1.863
+   },
+   "topAir": [
+    {
+     "substance": "Total particulate matter",
+     "tonnes": 66.1
+    },
+    {
+     "substance": "PM10 - Particulate Matter <= 10 Micrometers",
+     "tonnes": 18.2
+    },
+    {
+     "substance": "PM2.5 - Particulate Matter <= 2.5 Micrometers",
+     "tonnes": 1.86
+    }
+   ]
+  },
+  {
+   "id": "7134",
+   "lastYear": 2024,
+   "company": "NATT Tools Group Inc.",
+   "name": "NATT Tools Group Inc.",
+   "address": "460 Sherman Avenue North, Hamilton",
+   "lat": 43.2663,
+   "lon": -79.829,
+   "naics": "Cold-rolled steel shape manufacturing",
+   "sector": "Iron and Steel",
+   "year": 2024,
+   "air": {
+    "PM10": 12.98,
+    "PM25": 12.93
+   },
+   "topAir": [
+    {
+     "substance": "PM10 - Particulate Matter <= 10 Micrometers",
+     "tonnes": 13
+    },
+    {
+     "substance": "PM2.5 - Particulate Matter <= 2.5 Micrometers",
+     "tonnes": 12.9
+    },
+    {
+     "substance": "Volatile Organic Compounds (Total)",
+     "tonnes": 10.8
+    },
+    {
+     "substance": "2-Butoxyethanol",
+     "tonnes": 8.96
+    },
+    {
+     "substance": "Manganese (and its compounds)",
+     "tonnes": 0.106
+    }
+   ]
+  },
+  {
+   "id": "4045",
+   "lastYear": 2024,
+   "company": "ArcelorMittal long Products Canada G.P.",
+   "name": "ArcelorMittal long Products Canada - Hamilton East",
+   "address": "690 Strathearne Avenue, Hamilton",
+   "lat": 43.2625,
+   "lon": -79.7857,
+   "naics": "Steel wire drawing",
+   "sector": "Iron and Steel",
+   "year": 2024,
+   "air": {
+    "PM10": 11.33,
+    "PM25": 7.637
+   },
+   "topAir": [
+    {
+     "substance": "Hydrochloric acid",
+     "tonnes": 13
+    },
+    {
+     "substance": "PM10 - Particulate Matter <= 10 Micrometers",
+     "tonnes": 11.3
+    },
+    {
+     "substance": "PM2.5 - Particulate Matter <= 2.5 Micrometers",
+     "tonnes": 7.64
+    },
+    {
+     "substance": "Lead (and its compounds)",
+     "tonnes": 0.047
+    }
+   ]
+  },
+  {
+   "id": "11235",
+   "lastYear": 2023,
+   "company": "Waterford Sand & Gravel Limited",
+   "name": "Vinemount Quarries",
+   "address": "451 Tenth Road East, Stoney Creek",
+   "lat": 43.1769,
+   "lon": -79.6643,
+   "naics": "Limestone mining and quarrying",
+   "sector": "Mining and Quarrying",
+   "year": 2023,
+   "air": {
+    "NO2": 28.1,
+    "PM10": 9.169,
+    "PM25": 2.767
+   },
+   "topAir": [
+    {
+     "substance": "Nitrogen oxides (expressed as nitrogen dioxide)",
+     "tonnes": 28.1
+    },
+    {
+     "substance": "Total particulate matter",
+     "tonnes": 25.3
+    },
+    {
+     "substance": "PM10 - Particulate Matter <= 10 Micrometers",
+     "tonnes": 9.17
+    },
+    {
+     "substance": "PM2.5 - Particulate Matter <= 2.5 Micrometers",
+     "tonnes": 2.77
+    }
+   ]
+  },
+  {
+   "id": "11833",
+   "lastYear": 2024,
+   "company": "Mondelez Canada Inc",
+   "name": "Hamilton Confectionary Plant",
+   "address": "45 Ewen Road, Hamilton",
+   "lat": 43.25498,
+   "lon": -79.93063,
+   "naics": "Non-chocolate confectionery manufacturing",
+   "sector": "Other Manufacturing",
+   "year": 2024,
+   "air": {
+    "PM10": 7.729,
+    "PM25": 3.929
+   },
+   "topAir": [
+    {
+     "substance": "PM10 - Particulate Matter <= 10 Micrometers",
+     "tonnes": 7.73
+    },
+    {
+     "substance": "PM2.5 - Particulate Matter <= 2.5 Micrometers",
+     "tonnes": 3.93
+    }
+   ]
+  },
+  {
+   "id": "11822",
+   "lastYear": 2024,
+   "company": "LOGISTEC Stevedoring Canada Inc.",
+   "name": "Logistec",
+   "address": "95 Flank Street, Hamilton",
+   "lat": 43.2711,
+   "lon": -79.8448,
+   "naics": "Mineral, ore and precious metal merchant wholesalers",
+   "sector": "Other (Except Manufacturing)",
+   "year": 2024,
+   "air": {
+    "PM10": 5.4,
+    "PM25": 0.7
+   },
+   "topAir": [
+    {
+     "substance": "Total particulate matter",
+     "tonnes": 13.8
+    },
+    {
+     "substance": "PM10 - Particulate Matter <= 10 Micrometers",
+     "tonnes": 5.4
+    },
+    {
+     "substance": "PM2.5 - Particulate Matter <= 2.5 Micrometers",
+     "tonnes": 0.7
+    }
+   ]
+  },
+  {
+   "id": "18968",
+   "lastYear": 2024,
+   "company": "Richardson International Ltd.",
+   "name": "Richardson International",
+   "address": "155 Eastport Boulevard, Hamilton",
+   "lat": 43.2712,
+   "lon": -79.7834,
+   "naics": "General warehousing and storage",
+   "sector": "Other (Except Manufacturing)",
+   "year": 2024,
+   "air": {
+    "PM10": 5.302,
+    "PM25": 0.9084
+   },
+   "topAir": [
+    {
+     "substance": "Total particulate matter",
+     "tonnes": 13.7
+    },
+    {
+     "substance": "PM10 - Particulate Matter <= 10 Micrometers",
+     "tonnes": 5.3
+    },
+    {
+     "substance": "PM2.5 - Particulate Matter <= 2.5 Micrometers",
+     "tonnes": 0.908
+    }
+   ]
+  },
+  {
+   "id": "4483",
+   "lastYear": 2024,
+   "company": "Bartek Ingredients Inc.",
+   "name": "Plant #1",
+   "address": "421 Seaman Street, Stoney Creek",
+   "lat": 43.2338,
+   "lon": -79.7151,
+   "naics": "All other miscellaneous chemical product manufacturing",
+   "sector": "Chemicals",
+   "year": 2024,
+   "air": {
+    "PM10": 4.572,
+    "PM25": 3.784
+   },
+   "topAir": [
+    {
+     "substance": "PM10 - Particulate Matter <= 10 Micrometers",
+     "tonnes": 4.57
+    },
+    {
+     "substance": "PM2.5 - Particulate Matter <= 2.5 Micrometers",
+     "tonnes": 3.78
+    }
+   ]
+  },
+  {
+   "id": "5645",
+   "lastYear": 2024,
+   "company": "Triple M Metal LP",
+   "name": "Parkdale West",
+   "address": "799 Parkdale Avenue, Hamilton",
+   "lat": 43.2608,
+   "lon": -79.7808,
+   "naics": "Recyclable metal merchant wholesalers",
+   "sector": "Other (Except Manufacturing)",
+   "year": 2024,
+   "air": {
+    "PM10": 4.349,
+    "PM25": 1.54
+   },
+   "topAir": [
+    {
+     "substance": "PM10 - Particulate Matter <= 10 Micrometers",
+     "tonnes": 4.35
+    },
+    {
+     "substance": "PM2.5 - Particulate Matter <= 2.5 Micrometers",
+     "tonnes": 1.54
+    },
+    {
+     "substance": "Lead (and its compounds)",
+     "tonnes": 0.00562
+    },
+    {
+     "substance": "Selenium (and its compounds)",
+     "tonnes": 0.000791
+    },
+    {
+     "substance": "Mercury (and its compounds)",
+     "tonnes": 0.000316
+    }
+   ]
+  },
+  {
+   "id": "30910",
+   "lastYear": 2024,
+   "company": "G3 Canada Limited",
+   "name": "G3 Canada Limited - Hamilton",
+   "address": "475 Eastport Boulevard, Hamilton",
+   "lat": 43.276,
+   "lon": -79.788,
+   "naics": "Oilseed and grain merchant wholesalers",
+   "sector": "Other (Except Manufacturing)",
+   "year": 2024,
+   "air": {
+    "PM10": 3.566,
+    "PM25": 2.264
+   },
+   "topAir": [
+    {
+     "substance": "Total particulate matter",
+     "tonnes": 6.65
+    },
+    {
+     "substance": "PM10 - Particulate Matter <= 10 Micrometers",
+     "tonnes": 3.57
+    },
+    {
+     "substance": "PM2.5 - Particulate Matter <= 2.5 Micrometers",
+     "tonnes": 2.26
+    }
+   ]
+  },
+  {
+   "id": "1391",
+   "lastYear": 2024,
+   "company": "Harsco Inc.",
+   "name": "Arcelor Mittal Dofasco (Formerly Plt14)",
+   "address": "Burlington Street, Hamilton",
+   "lat": 43.2628,
+   "lon": -79.7986,
+   "naics": "All other non-metallic mineral product manufacturing",
+   "sector": "Cement, Lime and Other Non-Metallic Minerals",
+   "year": 2024,
+   "air": {
+    "PM10": 3.564,
+    "PM25": 0.819
+   },
+   "topAir": [
+    {
+     "substance": "PM10 - Particulate Matter <= 10 Micrometers",
+     "tonnes": 3.56
+    },
+    {
+     "substance": "PM2.5 - Particulate Matter <= 2.5 Micrometers",
+     "tonnes": 0.819
+    }
+   ]
+  },
+  {
+   "id": "7243",
+   "lastYear": 2024,
+   "company": "Lafarge Canada Inc. - EAST",
+   "name": "Stoney Creek Plant",
+   "address": "360 Jones Road, Stoney Creek",
+   "lat": 43.2234,
+   "lon": -79.6875,
+   "naics": "Other concrete product manufacturing",
+   "sector": "Cement, Lime and Other Non-Metallic Minerals",
+   "year": 2024,
+   "air": {
+    "PM10": 3,
+    "PM25": 1.449
+   },
+   "topAir": [
+    {
+     "substance": "PM10 - Particulate Matter <= 10 Micrometers",
+     "tonnes": 3
+    },
+    {
+     "substance": "PM2.5 - Particulate Matter <= 2.5 Micrometers",
+     "tonnes": 1.45
+    }
+   ]
+  },
+  {
+   "id": "31751",
+   "lastYear": 2024,
+   "company": "Max Aicher (North America) Limited",
+   "name": "Max Aicher (North America) Limited",
+   "address": "855 Industrial Drive, Hamilton",
+   "lat": 43.26654,
+   "lon": -79.82236,
+   "naics": "Cold-rolled steel shape manufacturing",
+   "sector": "Iron and Steel",
+   "year": 2024,
+   "air": {
+    "NO2": 33.82,
+    "PM10": 2.32,
+    "PM25": 2.31
+   },
+   "topAir": [
+    {
+     "substance": "Nitrogen oxides (expressed as nitrogen dioxide)",
+     "tonnes": 33.8
+    },
+    {
+     "substance": "Volatile Organic Compounds (Total)",
+     "tonnes": 8.34
+    },
+    {
+     "substance": "PM10 - Particulate Matter <= 10 Micrometers",
+     "tonnes": 2.32
+    },
+    {
+     "substance": "PM2.5 - Particulate Matter <= 2.5 Micrometers",
+     "tonnes": 2.31
+    }
+   ]
+  },
+  {
+   "id": "7135",
+   "lastYear": 2024,
+   "company": "Opta Waterdown Inc.",
+   "name": "Opta Waterdown Inc.",
+   "address": "407 Parkside Drive, Waterdown",
+   "lat": 43.3483,
+   "lon": -79.8955,
+   "naics": "All other miscellaneous manufacturing",
+   "sector": "Other Manufacturing",
+   "year": 2024,
+   "air": {
+    "PM10": 1.725,
+    "PM25": 1.724
+   },
+   "topAir": [
+    {
+     "substance": "PM10 - Particulate Matter <= 10 Micrometers",
+     "tonnes": 1.72
+    },
+    {
+     "substance": "PM2.5 - Particulate Matter <= 2.5 Micrometers",
+     "tonnes": 1.72
+    }
+   ]
+  },
+  {
+   "id": "5987",
+   "lastYear": 2025,
+   "company": "Darling International Canada Inc.",
+   "name": "Darling International Canada",
+   "address": "880 Highway 5 Highway, Dundas",
+   "lat": 43.2894,
+   "lon": -80.0125,
+   "naics": "Rendering and meat processing from carcasses",
+   "sector": "Other Manufacturing",
+   "year": 2024,
+   "air": {
+    "PM10": 1.593,
+    "PM25": 1.355
+   },
+   "topAir": [
+    {
+     "substance": "PM10 - Particulate Matter <= 10 Micrometers",
+     "tonnes": 1.59
+    },
+    {
+     "substance": "PM2.5 - Particulate Matter <= 2.5 Micrometers",
+     "tonnes": 1.35
+    }
+   ]
+  },
+  {
+   "id": "11821",
+   "lastYear": 2024,
+   "company": "Lehigh Hanson Materials Limited",
+   "name": "Waterdown Plant",
+   "address": "130 Coreslab Drive, Hamilton",
+   "lat": 43.30843,
+   "lon": -79.92592,
+   "naics": "Ready-mix concrete manufacturing",
+   "sector": "Cement, Lime and Other Non-Metallic Minerals",
+   "year": 2024,
+   "air": {
+    "PM10": 1.57,
+    "PM25": 0.18
+   },
+   "topAir": [
+    {
+     "substance": "PM10 - Particulate Matter <= 10 Micrometers",
+     "tonnes": 1.57
+    },
+    {
+     "substance": "PM2.5 - Particulate Matter <= 2.5 Micrometers",
+     "tonnes": 0.18
+    }
+   ]
+  },
+  {
+   "id": "11325",
+   "lastYear": 2024,
+   "company": "Triple M Metal LP",
+   "name": "Triple M Metal LP",
+   "address": "1640 Brampton Street, Hamilton",
+   "lat": 43.253,
+   "lon": -79.7897,
+   "naics": "Recyclable metal merchant wholesalers",
+   "sector": "Other (Except Manufacturing)",
+   "year": 2024,
+   "air": {
+    "PM10": 1.349
+   },
+   "topAir": [
+    {
+     "substance": "PM10 - Particulate Matter <= 10 Micrometers",
+     "tonnes": 1.35
+    }
+   ]
+  },
+  {
+   "id": "921",
+   "lastYear": 2024,
+   "company": "Bartek Ingredients Inc.",
+   "name": "Plant #2",
+   "address": "690 South Service Road, Stoney Creek",
+   "lat": 43.22698,
+   "lon": -79.6935,
+   "naics": "All other miscellaneous chemical product manufacturing",
+   "sector": "Chemicals",
+   "year": 2024,
+   "air": {
+    "CO": 235.7,
+    "PM10": 1.22
+   },
+   "topAir": [
+    {
+     "substance": "Carbon monoxide",
+     "tonnes": 236
+    },
+    {
+     "substance": "Volatile Organic Compounds (Total)",
+     "tonnes": 134
+    },
+    {
+     "substance": "Xylene (all isomers)",
+     "tonnes": 3.41
+    },
+    {
+     "substance": "PM10 - Particulate Matter <= 10 Micrometers",
+     "tonnes": 1.22
+    },
+    {
+     "substance": "Maleic anhydride",
+     "tonnes": 1.15
+    }
+   ]
+  },
+  {
+   "id": "7165",
+   "lastYear": 2024,
+   "company": "Nova Steel Inc.",
+   "name": "Nova Steel Inc. - Stoney Creek",
+   "address": "830 South Service Road, Stoney Creek",
+   "lat": 43.2261,
+   "lon": -79.6829,
+   "naics": "Cold-rolled steel shape manufacturing",
+   "sector": "Iron and Steel",
+   "year": 2024,
+   "air": {
+    "PM10": 1.1
+   },
+   "topAir": [
+    {
+     "substance": "PM10 - Particulate Matter <= 10 Micrometers",
+     "tonnes": 1.1
+    },
+    {
+     "substance": "Hydrochloric acid",
+     "tonnes": 0.683
+    }
+   ]
+  },
+  {
+   "id": "3503",
+   "lastYear": 2024,
+   "company": "Air Liquide Canada Inc.",
+   "name": "Air Liquide Canada - Hamilton (ASU and H2)",
+   "address": "95 Birmingham Street, Hamilton",
+   "lat": 43.262,
+   "lon": -79.8262,
+   "naics": "Industrial gas manufacturing",
+   "sector": "Chemicals",
+   "year": 2024,
+   "air": {
+    "PM10": 0.8327
+   },
+   "topAir": [
+    {
+     "substance": "PM10 - Particulate Matter <= 10 Micrometers",
+     "tonnes": 0.833
+    }
+   ]
+  },
+  {
+   "id": "10600",
+   "lastYear": 2024,
+   "company": "McMaster University",
+   "name": "MCMASTER UNIVERSITY",
+   "address": "1280 Main Street West, Hamilton",
+   "lat": 43.2609,
+   "lon": -79.9194,
+   "naics": "Universities",
+   "sector": "Other (Except Manufacturing)",
+   "year": 2024,
+   "air": {
+    "NO2": 109.4,
+    "CO": 31.85,
+    "PM10": 0.738,
+    "PM25": 0.738
+   },
+   "topAir": [
+    {
+     "substance": "Nitrogen oxides (expressed as nitrogen dioxide)",
+     "tonnes": 109
+    },
+    {
+     "substance": "Carbon monoxide",
+     "tonnes": 31.8
+    },
+    {
+     "substance": "PM10 - Particulate Matter <= 10 Micrometers",
+     "tonnes": 0.738
+    },
+    {
+     "substance": "PM2.5 - Particulate Matter <= 2.5 Micrometers",
+     "tonnes": 0.738
+    }
+   ]
+  },
+  {
+   "id": "25064",
+   "lastYear": 2024,
+   "company": "Canada Bread Company, Limited",
+   "name": "Canada Bread - Trillium",
+   "address": "745 Nebo Road, Hamilton",
+   "lat": 43.176015,
+   "lon": -79.844567,
+   "naics": "Commercial bakeries and frozen bakery product manufacturing",
+   "sector": "Other Manufacturing",
+   "year": 2024,
+   "air": {
+    "PM10": 0.6986,
+    "PM25": 0.6956
+   },
+   "topAir": [
+    {
+     "substance": "Volatile Organic Compounds (Total)",
+     "tonnes": 243
+    },
+    {
+     "substance": "PM10 - Particulate Matter <= 10 Micrometers",
+     "tonnes": 0.699
+    },
+    {
+     "substance": "PM2.5 - Particulate Matter <= 2.5 Micrometers",
+     "tonnes": 0.696
+    }
+   ]
+  },
+  {
+   "id": "7239",
+   "lastYear": 2024,
+   "company": "Orlick Industries Ltd.",
+   "name": "500 Seaman",
+   "address": "500 Seaman Street, Stoney Creek",
+   "lat": 43.231,
+   "lon": -79.7094,
+   "naics": "Other motor vehicle parts manufacturing",
+   "sector": "Transportation Equipment Mfg.",
+   "year": 2024,
+   "air": {
+    "PM10": 0.6091,
+    "PM25": 0.4105
+   },
+   "topAir": [
+    {
+     "substance": "PM10 - Particulate Matter <= 10 Micrometers",
+     "tonnes": 0.609
+    },
+    {
+     "substance": "PM2.5 - Particulate Matter <= 2.5 Micrometers",
+     "tonnes": 0.41
+    }
+   ]
+  },
+  {
+   "id": "5906",
+   "lastYear": 2024,
+   "company": "Orlick Industries Ltd.",
+   "name": "20 Teal",
+   "address": "20 Teal Avenue, Stoney Creek",
+   "lat": 43.2377,
+   "lon": -79.731,
+   "naics": "Other motor vehicle parts manufacturing",
+   "sector": "Transportation Equipment Mfg.",
+   "year": 2024,
+   "air": {
+    "PM10": 0.5557,
+    "PM25": 0.402
+   },
+   "topAir": [
+    {
+     "substance": "PM10 - Particulate Matter <= 10 Micrometers",
+     "tonnes": 0.556
+    },
+    {
+     "substance": "PM2.5 - Particulate Matter <= 2.5 Micrometers",
+     "tonnes": 0.402
+    }
+   ]
+  },
+  {
+   "id": "5768",
+   "lastYear": 2024,
+   "company": "Nelson Steel",
+   "name": "Glover Road",
+   "address": "400 Glover Road, Stoney Creek",
+   "lat": 43.2228,
+   "lon": -79.6762,
+   "naics": "Cold-rolled steel shape manufacturing",
+   "sector": "Iron and Steel",
+   "year": 2024,
+   "air": {
+    "PM10": 0.554
+   },
+   "topAir": [
+    {
+     "substance": "PM10 - Particulate Matter <= 10 Micrometers",
+     "tonnes": 0.554
+    },
+    {
+     "substance": "Hydrochloric acid",
+     "tonnes": 0.0283
+    }
+   ]
+  },
+  {
+   "id": "33690",
+   "lastYear": 2024,
+   "company": "Synagro Hamilton Operating LP",
+   "name": "Synagro Hamilton Operating LP",
+   "address": "700 Woodward Avenue, Hamilton",
+   "lat": 43.25099,
+   "lon": -79.7743,
+   "naics": "Sewage treatment facilities",
+   "sector": "Water and Wastewater Systems",
+   "year": 2024,
+   "air": {
+    "PM10": 0.51,
+    "PM25": 0.51
+   },
+   "topAir": [
+    {
+     "substance": "PM10 - Particulate Matter <= 10 Micrometers",
+     "tonnes": 0.51
+    },
+    {
+     "substance": "PM2.5 - Particulate Matter <= 2.5 Micrometers",
+     "tonnes": 0.51
+    }
+   ]
+  },
+  {
+   "id": "4771",
+   "lastYear": 2024,
+   "company": "The Regional Municipality of Halton",
+   "name": "Burlington Skyway Wastewater Treatment Plant",
+   "address": "1125 Lakeshore Road, Burlington",
+   "lat": 43.3097,
+   "lon": -79.8014,
+   "naics": "Sewage treatment facilities",
+   "sector": "Water and Wastewater Systems",
+   "year": 2024,
+   "air": {
+    "PM10": 0.4218,
+    "PM25": 0.4216
+   },
+   "topAir": [
+    {
+     "substance": "Ammonia (total)",
+     "tonnes": 0.55
+    },
+    {
+     "substance": "Total particulate matter",
+     "tonnes": 0.422
+    },
+    {
+     "substance": "PM10 - Particulate Matter <= 10 Micrometers",
+     "tonnes": 0.422
+    },
+    {
+     "substance": "PM2.5 - Particulate Matter <= 2.5 Micrometers",
+     "tonnes": 0.422
+    },
+    {
+     "substance": "Cadmium (and its compounds)",
+     "tonnes": 0.0000058
+    },
+    {
+     "substance": "Lead (and its compounds)",
+     "tonnes": 0.00000261
+    }
+   ]
+  },
+  {
+   "id": "28627",
+   "lastYear": 2024,
+   "company": "Maple Leaf Foods Inc.",
+   "name": "Maple Leaf Foods - Heritage",
+   "address": "440 Glover Road, Hamilton",
+   "lat": 43.171908,
+   "lon": -79.835175,
+   "naics": "Rendering and meat processing from carcasses",
+   "sector": "Other Manufacturing",
+   "year": 2024,
+   "air": {
+    "PM10": 0.231,
+    "PM25": 0.231
+   },
+   "topAir": [
+    {
+     "substance": "Ammonia (total)",
+     "tonnes": 3.66
+    },
+    {
+     "substance": "PM10 - Particulate Matter <= 10 Micrometers",
+     "tonnes": 0.231
+    },
+    {
+     "substance": "PM2.5 - Particulate Matter <= 2.5 Micrometers",
+     "tonnes": 0.231
+    }
+   ]
+  },
+  {
+   "id": "5904",
+   "lastYear": 2024,
+   "company": "Orlick Industries Ltd.",
+   "name": "411 Parkdale",
+   "address": "411 Parkdale Avenue, Hamilton",
+   "lat": 43.2484,
+   "lon": -79.789,
+   "naics": "Other motor vehicle parts manufacturing",
+   "sector": "Transportation Equipment Mfg.",
+   "year": 2024,
+   "air": {
+    "PM10": 0.128,
+    "PM25": 0.1087
+   },
+   "topAir": [
+    {
+     "substance": "PM10 - Particulate Matter <= 10 Micrometers",
+     "tonnes": 0.128
+    },
+    {
+     "substance": "PM2.5 - Particulate Matter <= 2.5 Micrometers",
+     "tonnes": 0.109
+    }
+   ]
+  },
+  {
+   "id": "5970",
+   "lastYear": 2024,
+   "company": "City of Hamilton",
+   "name": "Woodward Avenue Wastewater Treatment Plant",
+   "address": "700 Woodward Avenue North, Hamilton",
+   "lat": 43.253,
+   "lon": -79.7711,
+   "naics": "Sewage treatment facilities",
+   "sector": "Water and Wastewater Systems",
+   "year": 2024,
+   "air": {
+    "PM25": 0.367
+   },
+   "topAir": [
+    {
+     "substance": "PM2.5 - Particulate Matter <= 2.5 Micrometers",
+     "tonnes": 0.367
+    }
+   ]
+  },
+  {
+   "id": "32265",
+   "lastYear": 2024,
+   "company": "HIPCO-Portlands Projects Corporation",
+   "name": "Pier10 Energy Centre",
+   "address": "560 Ferguson Avenue North, Hamilton",
+   "lat": 43.27216,
+   "lon": -79.85315,
+   "naics": "Steam and air-conditioning supply",
+   "sector": "Other (Except Manufacturing)",
+   "year": 2024,
+   "air": {
+    "NO2": 51
+   },
+   "topAir": [
+    {
+     "substance": "Nitrogen oxides (expressed as nitrogen dioxide)",
+     "tonnes": 51
+    }
+   ]
+  },
+  {
+   "id": "32253",
+   "lastYear": 2024,
+   "company": "Longwood Energy Corporation",
+   "name": "MIP BEAM Energy Centre",
+   "address": "270 Longwood Road South, Hamilton",
+   "lat": 43.25491,
+   "lon": -79.90331,
+   "naics": "Fossil-fuel electric power generation",
+   "sector": "Electricity",
+   "year": 2024,
+   "air": {
+    "NO2": 55
+   },
+   "topAir": [
+    {
+     "substance": "Nitrogen oxides (expressed as nitrogen dioxide)",
+     "tonnes": 55
+    }
+   ]
+  },
+  {
+   "id": "11168",
+   "lastYear": 2024,
+   "company": "Johnson Electric Canada Ltd.",
+   "name": "Johnson Electric Canada Ltd. - Ancaster",
+   "address": "1325 Cormorant Road, Ancaster",
+   "lat": 43.1885,
+   "lon": -80.0249,
+   "naics": "Motor vehicle transmission and power train parts manufacturing",
+   "sector": "Transportation Equipment Mfg.",
+   "year": 2024,
+   "air": {
+    "PM25": 0.4513
+   },
+   "topAir": [
+    {
+     "substance": "PM2.5 - Particulate Matter <= 2.5 Micrometers",
+     "tonnes": 0.451
+    },
+    {
+     "substance": "Nickel (and its compounds)",
+     "tonnes": 0.0006
+    },
+    {
+     "substance": "Copper (and its compounds)",
+     "tonnes": 0.0003
+    }
+   ]
+  },
+  {
+   "id": "11343",
+   "lastYear": 2024,
+   "company": "Bitumar Inc.",
+   "name": "Canadian Asphalt Inc.",
+   "address": "400 Eastport Boulevard, Hamilton",
+   "lat": 43.2756,
+   "lon": -79.78547,
+   "naics": "All other miscellaneous manufacturing",
+   "sector": "Other Manufacturing",
+   "year": 2024,
+   "air": {
+    "NO2": 2.69,
+    "SO2": 14.68
+   },
+   "topAir": [
+    {
+     "substance": "Sulphur dioxide",
+     "tonnes": 14.7
+    },
+    {
+     "substance": "Nitrogen oxides (expressed as nitrogen dioxide)",
+     "tonnes": 2.69
+    }
+   ]
+  },
+  {
+   "id": "2070",
+   "lastYear": 2024,
+   "company": "Rain Carbon Canada Inc.",
+   "name": "Rain Carbon Canada Inc.",
+   "address": "725 Strathearne Avenue North, Hamilton",
+   "lat": 43.262326,
+   "lon": -79.791103,
+   "naics": "Other basic organic chemical manufacturing",
+   "sector": "Chemicals",
+   "year": 2024,
+   "air": {
+    "NO2": 22.12,
+    "CO": 18.58,
+    "Benzene": 15.21,
+    "SO2": 199.4,
+    "TRS": 7.289
+   },
+   "topAir": [
+    {
+     "substance": "Sulphur dioxide",
+     "tonnes": 199
+    },
+    {
+     "substance": "Volatile Organic Compounds (Total)",
+     "tonnes": 49.8
+    },
+    {
+     "substance": "Nitrogen oxides (expressed as nitrogen dioxide)",
+     "tonnes": 22.1
+    },
+    {
+     "substance": "Carbon monoxide",
+     "tonnes": 18.6
+    },
+    {
+     "substance": "Benzene",
+     "tonnes": 15.2
+    },
+    {
+     "substance": "Naphthalene",
+     "tonnes": 11.4
+    },
+    {
+     "substance": "Total reduced sulphur (expressed as hydrogen sulphide)",
+     "tonnes": 5.22
+    },
+    {
+     "substance": "Toluene",
+     "tonnes": 2.83
+    }
+   ]
+  },
+  {
+   "id": "15",
+   "lastYear": 2024,
+   "company": "Dofasco Inc., Stelco Inc.",
+   "name": "Baycoat",
+   "address": "244 Lanark Street, Hamilton",
+   "lat": 43.24119,
+   "lon": -79.74945,
+   "naics": "Coating, engraving, cold and heat treating and allied activities",
+   "sector": "Other Manufacturing",
+   "year": 2024,
+   "air": {
+    "NO2": 24,
+    "CO": 20
+   },
+   "topAir": [
+    {
+     "substance": "Nitrogen oxides (expressed as nitrogen dioxide)",
+     "tonnes": 24
+    },
+    {
+     "substance": "Carbon monoxide",
+     "tonnes": 20
+    },
+    {
+     "substance": "Volatile Organic Compounds (Total)",
+     "tonnes": 15.3
+    },
+    {
+     "substance": "2-Butoxyethanol",
+     "tonnes": 1.87
+    },
+    {
+     "substance": "Methyl ethyl ketone",
+     "tonnes": 1.44
+    },
+    {
+     "substance": "1,2,4-Trimethylbenzene",
+     "tonnes": 1.38
+    }
+   ]
+  }
+ ]
+}

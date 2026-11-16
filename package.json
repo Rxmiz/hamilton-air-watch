@@ -1,0 +1,17 @@
+{
+  "name": "hamilton-air-watch",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Tracks Hamilton, ON air quality and points to the factories most likely responsible for pollution spikes, using public data.",
+  "type": "module",
+  "scripts": {
+    "facilities": "node scripts/build-facilities.mjs",
+    "download-npri": "node scripts/build-facilities.mjs --download",
+    "readings": "node scripts/fetch-readings.mjs",
+    "attribute": "node scripts/attribute.mjs",
+    "update": "node scripts/fetch-readings.mjs && node scripts/attribute.mjs",
+    "build": "node scripts/build-facilities.mjs && npm run update",
+    "start": "node server.mjs"
+  },
+  "engines": { "node": ">=20" }
+}

@@ -1,0 +1,66 @@
+# Every hour: fetch new sensor data, re-score the factories, publish the site to GitHub Pages.
+# The HAMN history archive is kept on the `data` branch as a single commit that is replaced
+# on every run, so the repository doesn't grow by a megabyte an hour.
+name: Refresh and deploy
+
+on:
+  schedule:
+    - cron: '17 * * * *'   # HAMN posts each hour's data a little after the hour
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write   # to update the data branch
+  pages: write
+  id-token: write
+
+concurrency:
+  group: refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Restore the HAMN archive from the data branch
+        run: |
+          mkdir -p data/archive
+          if git fetch --depth=1 origin data; then
+            git show FETCH_HEAD:hamn.json > data/archive/hamn.json
+            echo "Restored archive: $(du -h data/archive/hamn.json | cut -f1)"
+          else
+            echo "No data branch yet — the first run backfills 91 days (a few minutes)."
+          fi
+
+      - name: Fetch sensor data and re-score
+        run: npm run update
+
+      - name: Save the archive back to the data branch
+        run: |
+          tmp=$(mktemp -d)
+          cp data/archive/hamn.json "$tmp/"
+          cd "$tmp"
+          git init -q -b data
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add hamn.json
+          git commit -q -m "HAMN archive $(date -u +%FT%TZ)"
+          git push -q --force "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" data
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - id: deploy
+        uses: actions/deploy-pages@v4

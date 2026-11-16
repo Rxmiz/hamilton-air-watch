@@ -1,0 +1,10 @@
+node_modules/
+.claude/
+# NPRI bulk downloads (~400 MB). site/data/facilities.json is built from them and committed.
+data/raw/
+# Live data is refreshed hourly by .github/workflows/refresh.yml.
+# The HAMN archive lives on the `data` branch; readings and scores are rebuilt on each deploy.
+data/archive/
+site/data/readings.json
+site/data/attribution.json
+.impeccable/
